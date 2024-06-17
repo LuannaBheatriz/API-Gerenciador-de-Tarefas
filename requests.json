@@ -1,0 +1,90 @@
+{
+    "requests": [
+      {
+        "name": "Criar Tarefa",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"titulo\": \"Título da Tarefa\",\n  \"descricao\": \"Descrição da Tarefa\",\n  \"concluida\": false\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/api/tarefas",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "tarefas"]
+          }
+        }
+      },
+      {
+        "name": "Obter Todas as Tarefas",
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:3000/api/tarefas",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "tarefas"]
+          }
+        }
+      },
+      {
+        "name": "Obter Tarefa por ID",
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:3000/api/tarefas/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "tarefas", "1"]
+          }
+        }
+      },
+      {
+        "name": "Atualizar Tarefa",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"titulo\": \"Título Atualizado\",\n  \"descricao\": \"Descrição Atualizada\",\n  \"concluida\": true\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/api/tarefas/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "tarefas", "1"]
+          }
+        }
+      },
+      {
+        "name": "Deletar Tarefa",
+        "request": {
+          "method": "DELETE",
+          "url": {
+            "raw": "http://localhost:3000/api/tarefas/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "tarefas", "1"]
+          }
+        }
+      }
+    ]
+  }
+  

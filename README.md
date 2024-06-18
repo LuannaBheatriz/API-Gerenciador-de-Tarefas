@@ -85,7 +85,7 @@ npx sequelize-cli init
 ### Criar um modelo e migration (exemplo):
 
 ```
-npx sequelize-cli model:generate --name Usuario --attributes nome:string,email:string,senha:string
+npx sequelize-cli model:generate --name Tarefa --attributes titulo:string,descricao:string,status:string,dataVencimento:date
 ```
 
 ### Executar as migrations para criar tabelas no banco de dados:
